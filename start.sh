@@ -1,4 +1,4 @@
 #!/bin/bash
 set -o pipefail
-python ingest.py
-python privateGPT.py
+python3 ingest.py
+python3 privateGPT.py

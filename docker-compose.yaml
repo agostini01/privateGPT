@@ -1,5 +1,15 @@
 services:
   privategpt:
-    build: .
+    build: 
+      context: .
+      args:
+        - UID=${UID}
+        - GID=${GID}
     volumes:
-      - ./models:/models
+      - ./models:/home/user/app/models
+      - ./source_documents:/home/user/app/source_documents
+    user: "${UID}:${GID}"
+
+    # tty: true
+    # stdin_open: true
+    # command: /bin/bash
