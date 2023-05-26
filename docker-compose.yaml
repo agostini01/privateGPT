@@ -1,0 +1,5 @@
+services:
+  privategpt:
+    build: .
+    volumes:
+      - ./models:/models
