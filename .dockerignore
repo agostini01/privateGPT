@@ -1,2 +1,15 @@
-models/
-source_documents/
+*
+
+# Folders that must be ignored
+# models/
+# source_documents/
+# db/
+
+# Files required to build and run the app
+!/LICENSE
+!README.md
+!/requirements.txt
+!/*.py
+!/run.sh
+!.env
+
